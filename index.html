@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header_container">
+        <a href="#">
+          <img class="icon" src="./image/Vector.png" alt="icono alura" />
+        </a>
+      </header>
+      <main class="main--content">
+        <textarea
+          class="input_text-to-encrypt"
+          placeholder="¡Ingrese el texto aquí!"
+        ></textarea>
+        <div class="request">
+          <img
+            class="request--icon"
+            src="./image/Group.png"
+            alt="signo de exclamacion"
+          />
+          <p class="request--text">Solo letras minúsculas y sin acentos</p>
+        </div>
+        <section class="actions">
+          <button class="button encrypt--button" type="button">
+            Encriptar
+          </button>
+          <button class="button decrypt--button" type="button">
+            Desencriptar
+          </button>
+        </section>
+        <section class="alert">
+          <img
+            class="alert--image"
+            src="./image/Muñeco.png"
+            alt="Muñeco con lupa buscando"
+          />
+          <p class="alert--header">Ningún mensaje fue encontrado.</p>
+          <p class="alert--text">
+            Ingresa el texto que desees encriptar o desencriptar.
+          </p>
+        </section>
+        <section class="result">
+          <textarea class="result-text" readonly></textarea>
+        </section>
+      </main>
+    </div>
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
